@@ -6,3 +6,19 @@ def help
   puts "- play : lets you choose a song to play"
   puts "- exit : exits this program"
 end
+
+def play(my_songs)
+  puts "Please enter a song name or number:"
+  input = gets.chomp()
+
+  if (1..9).to_a.index(index.to_i) != nil
+    puts "Playing #{my_songs[input.to_i - 1]}"
+  elsif my_songs.index(input) !=nil
+    puts "Playing #{input}"
+  else
+    puts "Invalid input, please try again"
+    
+    
+  end
+  
+end
